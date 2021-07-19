@@ -19,9 +19,15 @@ There are a number of potential advantages to a monorepo over individual reposit
 - **Lack of per-project access control** – With split repositories, access to a repository can be granted based upon need. A monorepo allows read access to all software in the project, possibly presenting new security issues. Note that there are versioning systems in which this limitation is not an issue. For example, when Subversion is used, it's possible to download any part of the repo (even a single directory), and path-based authorization can be used to restrict access to certain parts of a repository.
 - **More storage needed by default** – With split repositories, you fetch only the project you are interested in by default. With a monorepo, you check out all projects by default. This can take up a significant amount of storage space. While all versioning systems have a mechanism to do a partial checkout, doing so defeats some of the advantages of a monorepo.
 
-## Android Monorepo POC(flat modules)
+## Android Monorepo POC
+
+- flat
 
 ![AndroidProjectStructure](./AndroidProjectStructure.png)
+
+- hierarchy/embedded
+
+![AndroidProjectStructure2](./AndroidProjectStructure2.png)
 
 ![moduleDependencies](moduleDependencies.png)
 
