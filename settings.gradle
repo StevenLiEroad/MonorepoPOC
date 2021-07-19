@@ -1,2 +1,5 @@
 rootProject.name = "MonorepoPOC"
 include ':app'
+include ':mylibrary'
+include ':myapplication'
+include ':mylibrary2'
